@@ -1,0 +1,40 @@
+.btn {
+	display: inline-block;
+	font-size: $btn-font-size;
+	font-family: $font-family;
+	font-weight: $btn-font-weight;
+	line-height: $btn-line-height;
+	color: $body-color;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	user-select: none;
+	background-color: transparent;
+	border: $btn-border-width solid transparent;
+	border-radius: $btn-border-radius;
+	cursor: pointer;
+	outline: none;
+
+	// to be replaced with the design system spaces
+	padding: 0.5rem 2rem;
+
+	box-shadow: 0 3px 10px $gray;
+	transition: box-shadow 0.25s ease-in-out;
+
+
+	&:hover {
+		box-shadow: 0 8px 20px $gray;
+	}
+}
+
+
+/*
+* Alternate buttons
+*/
+
+@each $color,
+$value in $theme-colors {
+	.btn-#{$color} {
+		background-color: #{$value};
+	}
+}

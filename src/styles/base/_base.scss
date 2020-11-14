@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-family;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-size: $font-size-base;
+}
+
+p {
+    line-height: $line-height-base;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.hr {
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
